@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(#abbaab, #ffffff);
+  background-attachment: fixed;
+}
+
+.cust-font {
+  font-family: "Solway", serif !important;
+}
+
+.cust-img {
+  width: fit-auto !important;
+  height: 500px !important;
+  border-radius: 10px;
+}

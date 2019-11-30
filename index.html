@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doggo World</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Solway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="resources/logo.png"
+          width="80"
+          height="80"
+          class="d-inline-block align-top badge badge-circle badge-light mr-3"
+          alt=""
+        />
+        <span class="display-4 cust-font">Doggo World</span>
+      </a>
+      <form class="form-inline">
+        <button
+          class="btn btn-outline-info my-2 my-sm-0 mr-2"
+          type="button"
+          id="randomDog"
+        >
+          Show me a random doggo
+        </button>
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search doggo breed"
+          aria-label="Search"
+          id="customDogBreed"
+        />
+        <button
+          class="btn btn-outline-info my-2 my-sm-0"
+          type="button"
+          id="searchDogBreed"
+        >
+          Search
+        </button>
+      </form>
+    </nav>
+
+    <div class="container-fluid p-4">
+      <div class="row">
+        <div class="col-3 p-3">
+          <div class="form-group" id="inputPane">
+            <select
+              id="breedSelect"
+              class="form-control-lg bg-info text-white w-100"
+            >
+              <option value="" class="bg-light text-info">Breed</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-9 m-auto p-3 invisible" id="carouselDiv">
+          <div class="row">
+            <div class="bd-example col-8 m-auto">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner" id="carousel-inner"></div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleCaptions"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleCaptions"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <h5 class="text-info mx-auto" id="dogQuote"></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
